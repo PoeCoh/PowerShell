@@ -1,7 +1,7 @@
 Param (
-    [System.String]$Uri
-    [System.Collections.Hashtable]$Headers
-    [System.String]$Message
+    [System.String]$Uri,
+    [System.Collections.Hashtable]$Headers,
+    [System.String]$Message,
     [System.String]$Content
 )
 $Content = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($Content))
