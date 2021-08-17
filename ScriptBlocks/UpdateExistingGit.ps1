@@ -1,6 +1,6 @@
 Param (
     [System.String]$Uri
-    [System.String]$Headers
+    [System.Collections.Hashtable]$Headers
     [System.String]$Message
     [System.String]$Content
 )
