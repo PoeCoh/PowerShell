@@ -11,6 +11,6 @@ $Body = @{message = $Message; content = $Content; sha = $Sha} | ConvertTo-Json
 $Response = Invoke-RestMethod -Uri $Uri -Method Put -Headers $Headers -Body $Body
 
 <#
-PS> & $ScriptBlock $Uri $Headers $Message $Content
-PS> Invoke-Command -ScriptBlock $ScriptBlock -ArgumentList $Uri,$Headers,$Message,$Content
+PS> & $UpdateExistingGit $Uri $Headers $Message $Content
+PS> Invoke-Command -ScriptBlock $UpdateExistingGit -ArgumentList $Uri,$Headers,$Message,$Content
 #>
