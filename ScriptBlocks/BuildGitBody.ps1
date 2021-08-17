@@ -9,4 +9,6 @@ $Content = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetByt
 <#
 PS> $Body = & $BuildGitBody $Message $Content $Sha
 PS> $Body = Invoke-Command -ScriptBlock $BuildGitBody -ArgumentList $Message,$Content,$Sha
+
+Sha is only required if writing to an existing file
 #>
