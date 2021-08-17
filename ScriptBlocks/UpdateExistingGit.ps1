@@ -1,4 +1,3 @@
-# Updates an existing file on github
 Param (
     [System.String]$Uri
     [System.String]$Headers
