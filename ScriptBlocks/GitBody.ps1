@@ -9,7 +9,7 @@ $Content = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetByt
 
 <#
 PS> # Get scriptblock from github
-PS> $Text = Invoke-RestMethod -Uri https://raw.githubusercontent.com/PoeCoh/PowerShell/main/ScriptBlocks/GitBody.ps1
+PS> $Text = Invoke-RestMethod -Uri https://powershell.poecoh.com/ScriptBlocks/GitBody.ps1
 PS> $ScriptBlock = [System.Management.Automation.ScriptBlock]::Create($Text)
 
 PS> # Invoke scriptblock
