@@ -6,6 +6,7 @@ Param (
 )
 $Content = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes($Content))
 @{message = $Message; content = $Content; sha = $Sha} | ConvertTo-Json
+
 <#
 PS> # Get scriptblock from github
 PS> $Text = Invoke-RestMethod -Uri https://raw.githubusercontent.com/PoeCoh/PowerShell/main/ScriptBlocks/GitBody.ps1
